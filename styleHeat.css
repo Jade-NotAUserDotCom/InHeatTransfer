@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #272E38 15%,   
+    white 15% 
+  );
+}
+
+/*sidepane*/
+#sidepane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;              /* matches your colored side width */
+    height: 100vh;           /* fills the full viewport height */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidepane a{
+    text-decoration: none;
+}
+
+#sidepane button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: medium;
+    color: white;
+    background-color: #0D5C63;
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;      /* keep text on one line */
+    overflow: hidden;         /* hide anything that overflows */
+    text-overflow: ellipsis;
+}
+
+#sidepane button:hover {
+    background-color: #117A8B;
+}
+
+/*frame 1*/
+#demo {
+    display: block;
+    margin-left: 15%;
+    width: 85%;
+    height: 100vh;
+    background-image: url('campsite.jpeg');
+    background-size: 100% 100%;
+    background-position: center, right;
+    background-repeat: no-repeat;  
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    text-align: center;
+}
+
+/* Title styling */
+#headtitle {
+    font-family: 'Georgia', serif;
+    font-size: 60px;
+    color: gray;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    position: fixed;
+    top: 25%;
+    left: 36%;
+}
+
+/* Pot image */
+#pot {
+    position: fixed;
+    top: 40%;
+    left: 54.5%;
+    height: 40%;
+    width: 25%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Fire button */
+#cook {
+    position: fixed;
+    top: 85%;
+    left: 55%; 
+    transform: translateX(-50%);
+    background-color: #0D5C63;
+    color: lightgreen;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 4;
+    white-space: nowrap;      /* keep text on one line */
+    overflow: hidden;         /* hide anything that overflows */
+    text-overflow: ellipsis;
+}
+
+#cook:hover {
+  background-color: #117A80;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/*frame 2*/
+#description {
+    margin-left: 15%;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#description #topic {
+    margin-top: 20px;
+}
+
+#description #Ptopic {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
