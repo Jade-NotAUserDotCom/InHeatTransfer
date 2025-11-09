@@ -4,7 +4,7 @@ let timerIntervalCool = null;
 
 function smoking() {
   smoke = document.querySelector("#smoke");
-  if (heat > 20) {
+  if (heat > 10) {
     smoke.src = "pictures/smoke.png";
   } else {
     smoke.src = "";
