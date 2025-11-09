@@ -68,19 +68,35 @@ body {
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     position: fixed;
-    top: 25%;
+    top: 10%;
     left: 36%;
+}
+
+#smoke{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    height: 30%;
+    z-index: 3;
 }
 
 /* Pot image */
 #pot {
     position: fixed;
-    top: 40%;
+    top: 37%;
     left: 54.5%;
     height: 40%;
     width: 25%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: 1;
+}
+
+#fire {
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    height: 40%;
+    z-index: 2;
 }
 
 /* Fire button */
@@ -115,12 +131,30 @@ body {
     border-radius: 10px;
 }
 
-#description #topic {
+#description h1 {
+    font-size: 50px;
     margin-top: 20px;
 }
 
-#description #Ptopic {
-    font-size: 18px;
+#description h2 {
+    font-size: 50px;
     line-height: 1.6;
+    margin-top: 5rem;
 }
+
+#description p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#description ul li {
+    font-size: 30px;
+}
+
+#description a{
+    font-size: 30px;
+}
+
+
 
