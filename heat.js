@@ -40,7 +40,7 @@ function replace(topic) {
   const formula = document.querySelector("#formula");
   const index = document.querySelector("#indexes"); //ul
   const samples = document.querySelector("#samples"); //ul
-  const video = document.querySelector("#link");
+  const video = document.getElementById("lessonVideo");
   const visual = document.querySelector("#visual");
 
   let formulas = ["Q = (K * A * (Th-Tc))/d", "Q = hc ∙ A ∙ (Ts - Tf)", "P = e * \u03C3 * A * (Tr - Tc)4"];
@@ -112,8 +112,8 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.innerHTML = "Conduction Lesson";
-      video.href = "https://www.youtube.com/watch?v=9joLYfayee8";
+      video.src= "video lessons/conduction.mp4";
+      video.load;
       break;
     case "Convection":
         visual.src = "pictures/convection.jpeg";
@@ -136,8 +136,8 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.innerHTML = "Convection Lesson";
-      video.href = "https://www.youtube.com/watch?v=VxGIiOTuAIs";
+      video.src= "video lessons/convection.mp4";
+      video.load;
       break;
     case "Radiation":
         visual.src = "pictures/radiation.jpeg";
@@ -160,8 +160,8 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.innerHTML = "Radiation Lesson";
-      video.href = "https://www.youtube.com/watch?v=5GoZZKcNZiQ";
+      video.src= "video lessons/radiation.mp4";
+      video.load;
       break;
   }
 }
