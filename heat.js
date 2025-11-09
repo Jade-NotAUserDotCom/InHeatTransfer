@@ -5,7 +5,7 @@ let timerIntervalCool = null;
 function smoking() {
   smoke = document.querySelector("#smoke");
   if (heat > 20) {
-    smoke.src = "smoke.png";
+    smoke.src = "pictures/smoke.png";
   } else {
     smoke.src = "";
   }
@@ -41,6 +41,7 @@ function replace(topic) {
   const index = document.querySelector("#indexes"); //ul
   const samples = document.querySelector("#samples"); //ul
   const video = document.querySelector("#link");
+  const visual = document.querySelector("#visual");
 
   let formulas = ["Q = (K * A * (Th-Tc))/d", "Q = hc ∙ A ∙ (Ts - Tf)", "P = e * \u03C3 * A * (Tr - Tc)4"];
 
@@ -91,6 +92,7 @@ function replace(topic) {
 
   switch (topic) {
     case "Conduction":
+        visual.src = "pictures/conduction.jpeg";
       lecture.innerHTML =
         "Conduction happens when heat moves from an area of higher temperature to an area of lower temperature through direct contact. The faster-moving (high-energy) particles collide with slower ones, causing them to speed up and gain energy. This process continues throughout the material, transferring heat. Because of this, conduction is often called thermal conduction or heat conduction.";
       formula.innerHTML = formulas[0];
@@ -114,6 +116,7 @@ function replace(topic) {
       video.href = "https://www.youtube.com/watch?v=9joLYfayee8";
       break;
     case "Convection":
+        visual.src = "pictures/convection.jpeg";
       lecture.innerHTML =
         "Convection occurs when heat is transferred through the movement of a fluid (liquid or gas). When part of the fluid is heated, it expands, becomes less dense, and rises. The cooler, denser fluid then moves down to take its place, creating a circular flow called a convection current.";
       formula.innerHTML = formulas[1];
@@ -137,6 +140,7 @@ function replace(topic) {
       video.href = "https://www.youtube.com/watch?v=VxGIiOTuAIs";
       break;
     case "Radiation":
+        visual.src = "pictures/radiation.jpeg";
       lecture.innerHTML =
         "Radiation transfers heat through electromagnetic waves-mainly infrared radiation-without needing any physical medium. This means radiation can occur even in a vacuum, such as the heat from the sun reaching Earth.<br>As temperature rises, the wavelength in the spectra of the radiation emitted decreases and shorter wavelengths of radiation are emitted. Thermal radiation can be calculated by Stefan-Boltzmann law:<br>Radiation transfers heat through electromagnetic waves-mainly infrared radiation-without needing any physical medium. This means radiation can occur even in a vacuum, such as the heat from the sun reaching Earth.";
       formula.innerHTML = formulas[2];
@@ -180,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cookBTN) {
     cookBTN.onclick = () => {
       if (!timerInterval) {
-        document.querySelector("#fire").src = "fire.png";
+        document.querySelector("#fire").src = "pictures/fire.png";
         timerInterval = setInterval(cook, 250);
       } else if (timerInterval) {
         document.querySelector("#fire").src = "";

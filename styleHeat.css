@@ -1,11 +1,11 @@
 body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(
-    to right,
-    #272E38 15%,   
-    white 15% 
-  );
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        #272E38 15%,   
+        white 15% 
+    );
 }
 
 /*sidepane*/
@@ -50,7 +50,7 @@ body {
     margin-left: 15%;
     width: 85%;
     height: 100vh;
-    background-image: url('campsite.jpeg');
+    background-image: url('pictures/campsite.jpeg');
     background-size: 100% 100%;
     background-position: center, right;
     background-repeat: no-repeat;  
@@ -119,8 +119,8 @@ body {
 }
 
 #cook:hover {
-  background-color: #117A80;
-  transform: translateX(-50%) scale(1.05);
+    background-color: #117A80;
+    transform: translateX(-50%) scale(1.05);
 }
 
 /*frame 2*/
@@ -132,28 +132,46 @@ body {
 }
 
 #description h1 {
+    position: reative;
     font-size: 50px;
     margin-top: 20px;
 }
 
+#description #visual {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 400px;
+    height: 250px;
+}
+
+#description h1::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 5px;
+    background-color: #0D5C63;
+    margin-top: 5px;
+}
+
 #description h2 {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.6;
     margin-top: 5rem;
 }
 
 #description p {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.6;
     text-align: justify;
 }
 
 #description ul li {
-    font-size: 30px;
+    font-size: 2;
 }
 
 #description a{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
