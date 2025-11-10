@@ -112,7 +112,7 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.src= "video lessons/conduction.mp4";
+      video.src= `https://drive.google.com/file/d/1oNEwAbGr6SLsXydwOMH6tNNQHK-1Q-4F/preview`;// change to gdrive
       video.load;
       break;
     case "Convection":
@@ -136,7 +136,7 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.src= "video lessons/convection.mp4";
+      video.src= `https://drive.google.com/file/d/1ut12SEfO4g1olh_tfpx5ezBZlPfAw9_B/preview`;// change to gdrive
       video.load;
       break;
     case "Radiation":
@@ -160,7 +160,7 @@ function replace(topic) {
         li.textContent = Sample;
         samples.appendChild(li);
       }
-      video.src= "video lessons/radiation.mp4";
+      video.src= `https://drive.google.com/file/d/19KExP7GGkjZp1fQlrYNNcVZpaDzzINEi/preview`;// change to gdrive
       video.load;
       break;
   }
